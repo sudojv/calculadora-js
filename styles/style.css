@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+:root {
+    --body-bg-color: #F7E018;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100%;
+    background: var(--body-bg-color);
+    font: normal 1em Arial;
+}
+
+/* HEADER */
+
+header h1 {
+    margin: 40px 0px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+header span.material-symbols-outlined {
+    vertical-align:text-bottom;
+    font-size: 1.25em;
+}
+
+/* MAIN */
+
+main section#calculadora {
+    max-width: 400px;
+    min-width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+}
+
+section#calculadora fieldset {
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+section#calculadora legend {
+    padding: 0px 10px;
+    font-style: italic;
+    font-size: 1.25em;
+    text-align: left;
+}
+
+section#calculadora fieldset label {
+    padding-right: 5px;
+}
+
+section#calculadora div#conta {
+    margin-top: 25px;
+    text-align: center;
+}
+
+div#conta input[type='number'] {
+    width: 100px;
+    height: 25px;
+    border: 1px black solid;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 1.25em;
+}
+
+div#conta span {
+    font-size: 1.25em;
+}
+
+div#conta input[type='button'] {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+div#conta input[type='button']:hover {
+    background: rgb(20, 20, 20);
+}
+
+div#conta p#erros {
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 40px 0px;
+    text-align: center;
+    font: normal 1.25em Arial;
+}

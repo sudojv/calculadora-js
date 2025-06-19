@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JavaScript</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1><span class="material-symbols-outlined">calculate</span> Calculadora JS</h1>
+    </header>
+    <main>
+        <section id="calculadora">
+            <fieldset>
+                <legend>Operação</legend>
+                <input type="radio" name="operação" id="soma" checked>
+                <label for="soma">Soma</label>
+                <input type="radio" name="operação" id="subtração">
+                <label for="subtração">Subtração</label>
+                <input type="radio" name="operação" id="multiplicação">
+                <label for="multiplicação">Multiplicação</label>
+                <input type="radio" name="operação" id="divisão">
+                <label for="divisão">Divisão</label>
+            </fieldset>
+            <div id="conta">
+                <input type="number" name="operador" id="operador" value="0">
+                <span id="sinal">+</span>
+                <input type="number" name="operando" id="operando" value="0">
+                <span>=</span> <span id="resultado">0</span>
+                <p id="erros"> </p>
+                <input id="contar" type="button" value="Somar">
+            </div>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por João Victor em 2025
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
